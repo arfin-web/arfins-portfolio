@@ -7,8 +7,8 @@ export const projects = [{
     techStack: ["Next.js", "Gemini AI", "Vercel AI SDK", "PDF.js", "Supabase", "Clerk", "Tailwind CSS 4", "Shadcn UI"],
     challenges: "Efficiently extracting text from complex PDF layouts client-side and prompt engineering for accurate ranking.",
     outcome: "Enabled bulk processing of up to 10 resumes simultaneously with sub-second AI analysis and automated ranking.",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://hirelens-ai-nu.vercel.app/",
+    githubLink: "https://github.com/arfin-web/hirelens-ai",
     image: "/hirelensai.png"
 },
 {
@@ -20,8 +20,8 @@ export const projects = [{
     techStack: ["Next.js 16", "Prisma", "PostgreSQL (Neon)", "Better-Auth", "Tailwind CSS", "Shadcn UI"],
     challenges: "Optimizing database connection management in a serverless environment and implementing optimistic UI updates for real-time engagement.",
     outcome: "Achieved a zero-client-footprint by default with Server Components, improving performance and developer velocity across the stack.",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://ship-next-lemon.vercel.app/",
+    githubLink: "https://github.com/arfin-web/ship-next",
     image: "/shipnext.png"
 },
 {
@@ -33,8 +33,8 @@ export const projects = [{
     techStack: ["Next.js 16", "React 19", "Tailwind CSS 4", "Clerk", "Server Actions", "Zod"],
     challenges: "Eliminating complex client-side state synchronization logic while maintaining a highly interactive and snappy experience.",
     outcome: "Achieved significant reduction in JavaScript bundle size and optimized hydration, delivering an instantaneous initial load experience.",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://appoint-flow-frontend.vercel.app/",
+    githubLink: "https://github.com/arfin-web/appoint-flow-frontend",
     image: "/appointflow.png"
 },
 ];
