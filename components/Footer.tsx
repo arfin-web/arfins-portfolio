@@ -2,6 +2,7 @@
 
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowUp01Icon } from "@hugeicons/core-free-icons";
+import { footerLinks, builtWith } from "@/data/footer";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -32,11 +33,9 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold mb-4">Quick Links</h4>
                         <nav className="flex flex-col gap-2 text-sm text-muted-foreground">
-                            <a href="#about" className="hover:text-primary transition-colors w-fit">About Me</a>
-                            <a href="#skills" className="hover:text-primary transition-colors w-fit">Skills</a>
-                            <a href="#projects" className="hover:text-primary transition-colors w-fit">Projects</a>
-                            <a href="#experience" className="hover:text-primary transition-colors w-fit">Experience</a>
-                            <a href="#contact" className="hover:text-primary transition-colors w-fit">Contact</a>
+                            {footerLinks.map((link) => (
+                                <a key={link.name} href={link.href} className="hover:text-primary transition-colors w-fit">{link.name}</a>
+                            ))}
                         </nav>
                     </div>
 
@@ -44,22 +43,12 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold mb-4">Built With</h4>
                         <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                            <span className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
-                                Next.js 14 (App Router)
-                            </span>
-                            <span className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
-                                TypeScript
-                            </span>
-                            <span className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
-                                Tailwind CSS V4
-                            </span>
-                            <span className="flex items-center gap-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
-                                Shadcn UI
-                            </span>
+                            {builtWith.map((item) => (
+                                <span key={item} className="flex items-center gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-primary/60"></span>
+                                    {item}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </div>

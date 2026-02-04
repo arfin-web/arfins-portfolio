@@ -7,9 +7,11 @@ import {
     Linkedin01Icon,
     GithubIcon,
     NewTwitterIcon,
-    ArrowRight02Icon,
-    SentIcon
+    SentIcon,
+    Location01Icon,
+    Message01Icon
 } from "@hugeicons/core-free-icons";
+import { contactData } from "@/data/contact";
 
 const Contact = () => {
     return (
@@ -21,13 +23,13 @@ const Contact = () => {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                         </span>
-                        Contact
+                        {contactData.badge}
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                        Get In Touch
+                        {contactData.title}
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl">
-                        Interested in working together? Feel free to reach out for collaborations or just a friendly hello.
+                        {contactData.description}
                     </p>
                 </div>
 
@@ -37,51 +39,65 @@ const Contact = () => {
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
                             <p className="text-muted-foreground mb-6 leading-relaxed">
-                                I'm currently available for freelance work and full-time opportunities.
-                                If you have a project that needs some creative touch, I'd love to hear about it.
+                                I'm always open to discussing new projects, technical challenges, or the future of web development.
                             </p>
 
-                            <a
-                                href="mailto:hello@arfin.dev"
-                                className="inline-flex items-center gap-3 text-lg font-medium hover:text-primary transition-colors mb-2"
-                            >
-                                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
-                                    <HugeiconsIcon icon={Mail01Icon} size={20} />
+                            <div className="space-y-4">
+                                <a
+                                    href={`mailto:${contactData.email}`}
+                                    className="flex items-center gap-3 text-lg font-medium hover:text-primary transition-colors"
+                                >
+                                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                                        <HugeiconsIcon icon={Mail01Icon} size={20} />
+                                    </div>
+                                    {contactData.email}
+                                </a>
+
+                                {contactData.whatsapp && (
+                                    <a
+                                        href={`https://wa.me/${contactData.whatsapp.replace(/\+/g, '')}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-3 text-lg font-medium hover:text-primary transition-colors"
+                                    >
+                                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                                            <HugeiconsIcon icon={Message01Icon} size={20} />
+                                        </div>
+                                        {contactData.whatsapp}
+                                    </a>
+                                )}
+
+                                <div className="flex items-center gap-3 text-lg font-medium text-muted-foreground">
+                                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                                        <HugeiconsIcon icon={Location01Icon} size={20} />
+                                    </div>
+                                    {contactData.location}
                                 </div>
-                                hello@arfin.dev
-                            </a>
+                            </div>
                         </div>
 
                         <div>
                             <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
                             <div className="flex items-center gap-4">
-                                <a
-                                    href="https://github.com/arfinnafriz"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center w-12 h-12 rounded-xl bg-secondary border border-border/50 hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all duration-300 group"
-                                    aria-label="GitHub"
-                                >
-                                    <HugeiconsIcon icon={GithubIcon} size={22} />
-                                </a>
-                                <a
-                                    href="https://linkedin.com/in/arfinnafriz"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center w-12 h-12 rounded-xl bg-secondary border border-border/50 hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all duration-300 group"
-                                    aria-label="LinkedIn"
-                                >
-                                    <HugeiconsIcon icon={Linkedin01Icon} size={22} />
-                                </a>
-                                <a
-                                    href="https://twitter.com/arfinnafriz"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center w-12 h-12 rounded-xl bg-secondary border border-border/50 hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all duration-300 group"
-                                    aria-label="Twitter"
-                                >
-                                    <HugeiconsIcon icon={NewTwitterIcon} size={22} />
-                                </a>
+                                {contactData.socialLinks.map((link) => (
+                                    <a
+                                        key={link.name}
+                                        href={link.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-center w-12 h-12 rounded-xl bg-secondary border border-border/50 hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all duration-300 group"
+                                        aria-label={link.name}
+                                    >
+                                        <HugeiconsIcon
+                                            icon={
+                                                link.name === "GitHub" ? GithubIcon :
+                                                    link.name === "LinkedIn" ? Linkedin01Icon :
+                                                        NewTwitterIcon
+                                            }
+                                            size={22}
+                                        />
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </div>

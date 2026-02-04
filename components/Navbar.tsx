@@ -5,6 +5,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Menu01Icon, Cancel01Icon, ArrowRight02Icon } from "@hugeicons/core-free-icons";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { navLinks } from "@/data/navbar";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -19,14 +20,6 @@ const Navbar = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-    const navLinks = [
-        { name: "About", href: "#about" },
-        { name: "Skills", href: "#skills" },
-        { name: "Projects", href: "#projects" },
-        { name: "Experience", href: "#experience" },
-        { name: "Contact", href: "#contact" },
-    ];
 
     return (
         <header

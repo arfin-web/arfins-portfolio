@@ -11,6 +11,8 @@ import {
   NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
 
+import { heroData } from "@/data/hero";
+
 const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background py-10 md:py-0 mt-20">
@@ -24,37 +26,40 @@ const Hero = () => {
           {/* Text Content */}
           <div className="flex-1 space-y-6 text-center md:text-left">
             <div>
-              <h2 className="text-xl text-muted-foreground">Hi, I'm</h2>
+              <h2 className="text-xl text-muted-foreground">{heroData.greeting}</h2>
               <h1 className="text-5xl md:text-7xl font-bold">
-                Arfin Noor Rahman
+                {heroData.name}
               </h1>
               <h2 className="text-3xl font-semibold text-primary">
-                Frontend Software Engineer
+                {heroData.role}
               </h2>
             </div>
 
             <p className="text-lg text-muted-foreground max-w-xl">
-              Crafting high-performance, pixel-perfect web experiences with modern technologies.
+              {heroData.description}
             </p>
 
             {/* Tech Stack */}
             <div className="flex items-center justify-center md:justify-start gap-4">
-              <Image src="https://www.svgrepo.com/show/452092/react.svg" alt="reactjs" width={40} height={40} />
-              <Image src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" alt="nextjs" width={40} height={40} />
-              <Image src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg" alt="tailwindcss" width={40} height={40} />
-              <Image src="https://www.svgrepo.com/show/349540/typescript.svg" alt="typescript" width={40} height={40} />
+              {heroData.techStack.map((tech) => (
+                <Image key={tech.alt} src={tech.src} alt={tech.alt} width={40} height={40} />
+              ))}
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <Button size="lg" className="rounded-full">
-                View Projects
-                <HugeiconsIcon icon={ArrowRight01Icon} size={18} className="ml-2" />
+              <Button size="lg" className="rounded-full" asChild>
+                <a href="#projects">
+                  View Projects
+                  <HugeiconsIcon icon={ArrowRight01Icon} size={18} className="ml-2" />
+                </a>
               </Button>
 
-              <Button size="lg" variant="outline" className="rounded-full">
-                Contact Me
-                <HugeiconsIcon icon={Mail01Icon} size={18} className="ml-2" />
+              <Button size="lg" variant="outline" className="rounded-full" asChild>
+                <a href="#contact">
+                  Contact Me
+                  <HugeiconsIcon icon={Mail01Icon} size={18} className="ml-2" />
+                </a>
               </Button>
 
               <Button size="lg" variant="ghost" className="rounded-full">
@@ -75,8 +80,8 @@ const Hero = () => {
           <div className="flex-1 max-w-md relative">
             <div className="relative aspect-square rounded-full overflow-hidden border-4 shadow-xl">
               <Image
-                src="/profile_placeholder.webp"
-                alt="Arfin Noor Rahman"
+                src="/arfin.jpg"
+                alt={heroData.name}
                 fill
                 className="object-cover"
                 priority
