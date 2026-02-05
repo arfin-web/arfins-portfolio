@@ -1,5 +1,5 @@
 import { caseStudyData } from "@/data/caseStudies";
-import CaseStudySection from "@/components/CaseStudySection";
+import CaseStudySection from "@/components/projects/CaseStudySection";
 
 const CaseStudies = () => {
     return (
