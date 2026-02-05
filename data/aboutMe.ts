@@ -2,12 +2,12 @@ import {
     CodeCircleIcon,
     Layers01Icon,
     Rocket01Icon,
-    Database01Icon
 } from "@hugeicons/core-free-icons";
 
 export const aboutMeData = {
     title: "About Me",
     badge: "Software Developer | Turning Complex Requirements into Elegant Software",
+    mobileBadge: "The Narrative",
     description: [
         "I am a Software Developer driven by the challenge of building seamless, high-performance applications. While my roots are in crafting \"pixel-perfect\" user journeys, my focus has evolved into engineering complete software solutions that are as functional as they are beautiful.",
         "I specialize in the Modern JavaScript Stack, leveraging React, TypeScript, and Next.js to create fast, SEO-friendly, and highly interactive web and mobile applications."

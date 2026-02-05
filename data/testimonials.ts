@@ -1,20 +1,20 @@
 export const testimonials = [
     {
-        quote: "Arfin is a rare breed of engineer who cares deeply about design details while writing rock-solid code. He transformed our clunky dashboard into a seamless experience.",
-        name: "Sarah Jenkins",
-        role: "Product Manager",
-        company: "TechCorp Solutions"
+        quote: "I am pleased to recommend Arfin. He is a talented and dedicated individual who has consistently delivered high-quality work. He is a true professional and I highly recommend him for any future projects.",
+        name: "Mostafizur Rahman",
+        role: "Chief Advisor",
+        company: "Multilateral Model Institute"
     },
     {
-        quote: "He delivered the e-commerce platform 2 weeks ahead of schedule. His understanding of performance optimization directly contributed to a 25% increase in our conversion rates.",
-        name: "Michael Chen",
+        quote: "Arfin is a highly skilled and experienced web developer. He has a deep understanding of modern web technologies and is always willing to learn new things. I genuinely happy to work with him.",
+        name: "Mohammad Rana",
         role: "Founder",
-        company: "ShopFlow Inc."
+        company: "Daily Shuborno Provat"
     },
     {
-        quote: "Collaborating with Arfin was a breeze. He communicates clearly, asks the right questions, and solves problems proactively. Highly recommended for any complex frontend work.",
-        name: "David Ross",
-        role: "Lead Backend Developer",
-        company: "NexTask"
+        quote: "He is a wonderful person and a true professional. He developed multiple Internal & SaaS applications for SEOVoltz. He is awaring about deadline and always deliver the project on time. I am very thankful to him.",
+        name: "Omor Bin Kabir",
+        role: "Chief Operating Officer",
+        company: "SEOVoltz"
     }
 ];

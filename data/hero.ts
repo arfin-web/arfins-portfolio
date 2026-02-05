@@ -9,9 +9,4 @@ export const heroData = {
         { src: "https://www.svgrepo.com/show/354431/tailwindcss-icon.svg", alt: "tailwindcss" },
         { src: "https://www.svgrepo.com/show/349540/typescript.svg", alt: "typescript" },
     ],
-    socialLinks: [
-        { platform: "GitHub", href: "#" },
-        { platform: "LinkedIn", href: "#" },
-        { platform: "Twitter", href: "#" },
-    ]
 };

@@ -7,10 +7,8 @@ export const footerLinks = [
 ];
 
 export const builtWith = [
-    "Next.js 14 (App Router)",
+    "Next.js 16 (App Router)",
     "TypeScript",
     "Tailwind CSS V4",
     "Shadcn UI",
-    "Prisma",
-    "Postgresql",
 ];

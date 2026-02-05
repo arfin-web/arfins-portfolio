@@ -6,8 +6,7 @@ export const contactData = {
     location: "Noakhali District, Chattogram, Bangladesh",
     whatsapp: "+8801739673620",
     socialLinks: [
-        { name: "GitHub", href: "#" },
-        { name: "LinkedIn", href: "#" },
-        { name: "Twitter", href: "#" }
+        { name: "GitHub", href: "https://github.com/arfin-web" },
+        { name: "LinkedIn", href: "https://www.linkedin.com/in/arfin-noor-rahman/" },
     ]
 };

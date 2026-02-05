@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { News01Icon } from "@hugeicons/core-free-icons";
 import { blogs } from "@/data/blogs";
-import BlogCard from "@/components/BlogCard";
+import BlogCard from "./BlogCard";
 
 const Blog = () => {
     return (

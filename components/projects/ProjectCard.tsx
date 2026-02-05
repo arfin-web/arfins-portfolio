@@ -22,7 +22,7 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
     return (
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
             {/* Project Details */}
-            <div className={`flex-1 ${index === 1 ? 'order-2 lg:order-1' : 'order-1 lg:order-2'} space-y-6`}>
+            <div className={`flex-1 order-2 ${index === 1 ? 'lg:order-2' : 'lg:order-1'} space-y-6`}>
                 <div>
                     <h3 className="text-2xl font-bold text-foreground mb-2">{project.title}</h3>
                     <p className="text-lg text-muted-foreground">{project.description}</p>
@@ -73,7 +73,7 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
             </div>
 
             {/* Project Visual/Card Placeholder */}
-            <div className={`flex-1 ${index === 1 ? 'order-1 lg:order-2' : 'order-2 lg:order-1'} w-full`}>
+            <div className={`flex-1 order-1 ${index === 1 ? "lg:order-1" : "lg:order-2"} w-full`}>
                 <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-background/50 shadow-xl group">
                     <Image src={project.image} alt={project.title} fill className="object-fill hover:scale-105 transition-all duration-300 ease-in-out" />
                 </div>

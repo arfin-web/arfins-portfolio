@@ -4,7 +4,7 @@ import {
     Certificate01Icon,
 } from "@hugeicons/core-free-icons";
 import { education, certifications } from "@/data/education";
-import { EducationCard, CertificationCard } from "@/components/EducationCards";
+import { EducationCard, CertificationCard } from "./EducationCards";
 
 const Education = () => {
     return (
