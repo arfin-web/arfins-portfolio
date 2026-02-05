@@ -16,7 +16,7 @@ export default function Loading() {
                 {/* Text animation */}
                 <div className="flex flex-col items-center gap-2">
                     <p className="text-xl font-bold tracking-tight text-foreground animate-pulse">
-                        Portfolio is loading
+                        Please wait...
                     </p>
                     <div className="flex gap-1">
                         <span className="w-1.5 h-1.5 bg-primary/60 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
