@@ -1,8 +1,9 @@
 export const projects = [{
+    id: "1",
     title: "Hirelens AI - AI-Powered Recruitment SaaS",
     description: "A modern recruitment platform that leverages AI to automate resume screening, candidate ranking, and hiring workflows.",
     problem: "Recruiters spend hours manually scanning resumes, leading to high time-to-hire and potential bias in candidate selection.",
-    role: "Lead Full-stack Developer",
+    role: "Full-stack Software Developer",
     responsibilities: "Designed the end-to-end architecture, integrated Gemini AI for intelligent analysis, and built a custom client-side PDF processing engine.",
     techStack: ["Next.js", "TypeScript", "Gemini AI", "Vercel AI SDK", "PDF.js", "Supabase", "Clerk", "Tailwind CSS 4", "Shadcn UI"],
     challenges: "Efficiently extracting text from complex PDF layouts client-side and prompt engineering for accurate ranking.",
@@ -12,10 +13,11 @@ export const projects = [{
     image: "/hirelensai.png"
 },
 {
+    id: "2",
     title: "ShipNext - SaaS Product Feedback Platform",
     description: "A premium, high-performance SaaS platform for founders to collect, manage, and prioritize product feedback via community-driven feature boards.",
     problem: "Founders struggle to organize fragmented feedback from different channels, making it difficult to prioritize high-impact feature requests.",
-    role: "Full-stack Software Engineer",
+    role: "Full-stack Software Developer",
     responsibilities: "Architected a type-safe modern monolith using Next.js 16, implemented serverless database branching with Neon, and built a custom auth layer using Better-Auth.",
     techStack: ["Next.js 16", "TypeScript", "Prisma", "PostgreSQL (Neon)", "Better-Auth", "Tailwind CSS", "Shadcn UI"],
     challenges: "Optimizing database connection management in a serverless environment and implementing optimistic UI updates for real-time engagement.",
@@ -25,10 +27,11 @@ export const projects = [{
     image: "/shipnext.png"
 },
 {
+    id: "3",
     title: "AppointFlow - Modern Appointment & Queue Management",
     description: "A high-performance appointment and queue management system built with Next.js 16 and React 19, focusing on server-first architecture and seamless user flow.",
     problem: "Existing booking systems often suffer from poor state synchronization waterfalls and heavy client-side bundles, leading to degraded performance.",
-    role: "Lead Frontend Architect",
+    role: "Full-stack Software Developer",
     responsibilities: "Architected a server-first data flow using Next.js 16 and React 19, implemented parallel data fetching to eliminate waterfalls, and integrated secure identity management via Clerk.",
     techStack: ["Next.js", "TypeScript", "Node.js", "Express.js", "Prisma", "Postgresql", "Tailwind CSS 4", "Shadcn UI", "Better-Auth"],
     challenges: "Eliminating complex client-side state synchronization logic while maintaining a highly interactive and snappy experience.",

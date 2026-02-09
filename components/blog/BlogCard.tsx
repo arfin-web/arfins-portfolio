@@ -40,7 +40,7 @@ const BlogCard = ({ post }: { post: Blog }) => {
                 </p>
 
                 <div className="mt-auto pt-4 border-t border-border/40 flex items-center text-primary font-medium text-sm">
-                    Read Article
+                    Under Construction
                     <HugeiconsIcon icon={ArrowRight01Icon} size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
             </div>

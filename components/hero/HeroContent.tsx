@@ -8,7 +8,6 @@ import {
 } from "@hugeicons/core-free-icons";
 import SocialLinks from "../shared/SocialLinks";
 import { heroData } from "@/data/hero";
-import Link from "next/link";
 
 const HeroContent = () => {
     return (
@@ -50,12 +49,12 @@ const HeroContent = () => {
                     </a>
                 </Button>
 
-                <Link href="https://drive.google.com/file/d/1_Df2R4OSJMwxmOk0ZfzbMcZxG7WqyVwT/view?usp=drive_link" target="_blank">
+                <a href="/ArfinNoorRahman.pdf" download="ArfinNoorRahman.pdf">
                     <Button size="lg" variant="ghost" className="rounded-full cursor-pointer">
                         Download Resume
                         <HugeiconsIcon icon={DownloadSquare01Icon} size={18} className="ml-2" />
                     </Button>
-                </Link>
+                </a>
             </div>
 
             {/* Social Links */}

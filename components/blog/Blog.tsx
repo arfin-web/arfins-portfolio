@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { News01Icon } from "@hugeicons/core-free-icons";
+// import { Button } from "@/components/ui/button";
+// import { HugeiconsIcon } from "@hugeicons/react";
+// import { News01Icon } from "@hugeicons/core-free-icons";
 import { blogs } from "@/data/blogs";
 import BlogCard from "./BlogCard";
 
@@ -30,12 +30,12 @@ const Blog = () => {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center md:text-left">
+                {/* <div className="mt-12 text-center md:text-left">
                     <Button variant="outline" className="gap-2">
                         View All Articles
                         <HugeiconsIcon icon={News01Icon} size={16} />
                     </Button>
-                </div>
+                </div> */}
 
             </div>
         </section>

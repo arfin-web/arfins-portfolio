@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { GithubIcon, LinkSquare02Icon } from "@hugeicons/core-free-icons";
 import Image from "next/image";
+import Link from "next/link";
 
-interface Project {
+export interface Project {
+    id: string;
     title: string;
     description: string;
     problem: string;
@@ -74,9 +76,11 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
 
             {/* Project Visual/Card Placeholder */}
             <div className={`flex-1 order-1 ${index === 1 ? "lg:order-1" : "lg:order-2"} w-full`}>
-                <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-background/50 shadow-xl group">
-                    <Image src={project.image} alt={project.title} fill className="object-fill hover:scale-105 transition-all duration-300 ease-in-out" />
-                </div>
+                <Link href={`/projects/${project.id}`}>
+                    <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-background/50 shadow-xl group">
+                        <Image src={project.image} alt={project.title} fill className="object-fill hover:scale-105 transition-all duration-300 ease-in-out" />
+                    </div>
+                </Link>
             </div>
         </div>
     );

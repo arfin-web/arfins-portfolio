@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
 import AboutMe from "@/components/about/AboutMe";
 import Skills from "@/components/skills/Skills";
@@ -8,12 +7,11 @@ import Experience from "@/components/experience/Experience";
 import Education from "@/components/education/Education";
 import Testimonials from "@/components/testimonials/Testimonials";
 import Contact from "@/components/contact/Contact";
-import Footer from "@/components/footer/Footer";
+import Blog from "@/components/blog/Blog";
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-background overflow-x-hidden">
-            <Navbar />
+        <>
             <Hero />
             <AboutMe />
             <Skills />
@@ -22,8 +20,8 @@ export default function Home() {
             {/* <CaseStudies /> */}
             <Education />
             <Testimonials />
+            <Blog />
             <Contact />
-            <Footer />
-        </main>
+        </>
     );
 }
