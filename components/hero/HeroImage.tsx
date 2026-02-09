@@ -3,16 +3,18 @@ import { heroData } from "@/data/hero";
 
 const HeroImage = () => {
     return (
-        <div className="flex-1 max-w-md relative">
-            <div className="relative aspect-square rounded-full overflow-hidden border-4 shadow-xl">
+        <div className="max-w-md order-1 lg:order-2">
+            <div className="w-full p-3 lg:p-0">
                 <Image
                     src="/arfin.jpg"
                     alt={heroData.name}
-                    fill
-                    className="object-cover"
+                    width={500}
+                    height={500}
+                    className="object-cover rounded-full"
                     priority
                 />
             </div>
+
         </div>
     );
 };

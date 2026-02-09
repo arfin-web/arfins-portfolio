@@ -11,7 +11,7 @@ import { heroData } from "@/data/hero";
 
 const HeroContent = () => {
     return (
-        <div className="flex-1 space-y-6 text-center md:text-left">
+        <div className="space-y-6 text-center md:text-left order-2 lg:order-1">
             <div>
                 <h2 className="text-xl text-muted-foreground">{heroData.greeting}</h2>
                 <h1 className="text-5xl md:text-7xl font-bold">

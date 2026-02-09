@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] opacity-30 animate-pulse delay-1000" />
 
       <div className="container mx-auto px-4 md:px-6 z-10">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-12">
           <HeroContent />
           <HeroImage />
         </div>
