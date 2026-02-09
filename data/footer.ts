@@ -11,4 +11,6 @@ export const builtWith = [
     "TypeScript",
     "Tailwind CSS V4",
     "Shadcn UI",
+    "Hugeicons",
+    "EmailJS",
 ];
