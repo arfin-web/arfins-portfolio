@@ -61,4 +61,4 @@ A redesigned submission process that handles validation and API feedback with sm
     ```
 
 ---
-*Built with intentionality and ❤️ by Arfin.*
+*Built with intentionality and ❤️ by Arfin Noor Rahman.*
