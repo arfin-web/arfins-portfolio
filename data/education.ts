@@ -7,7 +7,7 @@ export const education = [
     {
         type: "Degree",
         title: "BA in English",
-        institution: "Govt Titumir College under Dhaka University",
+        institution: "Dhaka Central University",
         year: "2018 - 2022",
         icon: Mortarboard02Icon,
     }
