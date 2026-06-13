@@ -1,8 +1,19 @@
 export const experiences = [
     {
+        company: "Growbiz Lab",
+        role: "Product Developer",
+        duration: "May 2026 - Present",
+        location: "Dhaka, Bangladesh",
+        achievements: [
+            "Architecting and shipping AI-powered SaaS products and internal business systems using modern full-stack technologies.",
+            "Designing LLM integrations, AI agents, and automation workflows that streamline business operations and reduce manual effort.",
+            "Collaborating directly with founders to translate product requirements into scalable software architectures and production-ready solutions."
+        ]
+    },
+    {
         company: "SEOVoltz",
         role: "Software Developer",
-        duration: "May 2024 - Present",
+        duration: "May 2024 - Apr 2026",
         location: "Noakhali District, Chattogram, Bangladesh",
         achievements: [
             "Building high-performance Internal & SaaS applications from the ground up, ensuring clean architecture and modular component design.",

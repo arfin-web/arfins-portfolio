@@ -13,7 +13,7 @@ const ContactInfo = () => {
             <div>
                 <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                    I'm always open to discussing new projects, technical challenges, or the future of web development.
+                    Let's build software that solves real problems, creates leverage, and scales with your business.
                 </p>
 
                 <div className="space-y-4">

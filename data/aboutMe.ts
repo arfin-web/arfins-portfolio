@@ -6,30 +6,37 @@ import {
 
 export const aboutMeData = {
     title: "About Me",
-    badge: "Software Developer | Turning Complex Requirements into Elegant Software",
+    badge: "Product Developer | Turning Business Bottlenecks into Scalable Software",
     mobileBadge: "The Narrative",
     description: [
-        "I am a Software Developer driven by the challenge of building seamless, high-performance applications. While my roots are in crafting \"pixel-perfect\" user journeys, my focus has evolved into engineering complete software solutions that are as functional as they are beautiful.",
-        "I specialize in the Modern JavaScript Stack, leveraging React, TypeScript, and Next.js to create fast, SEO-friendly, and highly interactive web and mobile applications."
+        `I am a Product Developer focused on building AI-powered SaaS products, intelligent automation systems, and scalable software that solve real business problems.
+
+        My approach goes beyond writing code. I work at the intersection of product thinking, system design, and engineering—translating complex requirements into intuitive user experiences, robust backend architectures, and automated workflows that create measurable business impact.
+
+        Leveraging technologies like Next.js, TypeScript, Python, FastAPI, PostgreSQL, and modern LLM ecosystems, I design and ship software that is fast, scalable, and built for long-term growth.
+
+        Whether collaborating with founders on product strategy or engineering production-ready applications, my goal remains the same: transform complexity into software that delivers value.
+        `
     ],
     features: [
         {
             icon: CodeCircleIcon,
-            title: "User-Centric Engineering",
-            description: "I combine deep frontend knowledge with a software developer’s mindset for logic and efficiency.",
+            title: "Business Problem Solver",
+            description: "I focus on understanding bottlenecks first, then designing software solutions that create meaningful business impact.",
             color: "text-blue-500"
         },
         {
             icon: Rocket01Icon,
-            title: "Scalable Code",
-            description: "I prioritize clean, modular code that is easy to maintain and scale.",
+            title: "AI-Powered Products",
+            description: "Leveraging LLMs, AI agents, and automation workflows to transform complex operations into intelligent systems.",
             color: "text-orange-500"
         },
         {
             icon: Layers01Icon,
-            title: "Continuous Evolution",
-            description: "I stay ahead of industry trends to ensure the projects I work on utilize the most efficient tools available.",
+            title: "End-to-End Ownership",
+            description: "From product discovery and technical planning to deployment and iteration, I build products from idea to production.",
             color: "text-purple-500"
         }
     ]
+
 };

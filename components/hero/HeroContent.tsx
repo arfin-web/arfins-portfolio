@@ -27,10 +27,17 @@ const HeroContent = () => {
             </p>
 
             {/* Tech Stack */}
-            <div className="flex items-center justify-center md:justify-start gap-4">
-                {heroData.techStack.map((tech) => (
-                    <Image key={tech.alt} src={tech.src} alt={tech.alt} width={40} height={40} />
-                ))}
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    {heroData.techStackPartOne.map((tech) => (
+                        <Image key={tech.alt} src={tech.src} alt={tech.alt} width={40} height={40} />
+                    ))}
+                </div>
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    {heroData.techStackPartTwo.map((tech) => (
+                        <Image key={tech.alt} src={tech.src} alt={tech.alt} width={40} height={40} />
+                    ))}
+                </div>
             </div>
 
             {/* CTA Buttons */}

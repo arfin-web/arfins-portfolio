@@ -9,51 +9,93 @@ import {
 
 export const skillCategories = [
     {
-        title: "Frontend Development",
+        title: "Product Engineering",
         icon: CodeCircleIcon,
-        skills: ["React 19", "Next.js 16", "TypeScript", "ES6+", "Redux Toolkit", "Zustand", "React Query"],
+        skills: [
+            "Product Discovery",
+            "PRD Analysis",
+            "System Design",
+            "Technical Planning",
+            "Feature Architecture",
+            "Agile Development"
+        ],
         color: "text-blue-500",
         bg: "bg-blue-500/10",
-        description: "Building responsive, high-performance user interfaces."
+        description: "Transforming business requirements into scalable software products."
     },
     {
-        title: "Backend & Database",
-        icon: Database01Icon,
-        skills: ["Node.js", "Express.js", "Prisma", "PostgreSQL", "MongoDB", "Supabase"],
-        color: "text-green-500",
-        bg: "bg-green-500/10",
-        description: "Designing scalable server-side logic and robust databases."
-    },
-    {
-        title: "Styling & UI",
+        title: "Frontend Systems",
         icon: TouchInteraction01Icon,
-        skills: ["Tailwind CSS 4", "Shadcn UI", "Minimal Animations", "Responsive Design"],
+        skills: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Redux Toolkit",
+            "Zustand",
+            "React Query"
+        ],
         color: "text-purple-500",
         bg: "bg-purple-500/10",
-        description: "Crafting beautiful, interaction-rich web experiences."
+        description: "Building fast, scalable, and user-focused application experiences."
     },
     {
-        title: "Architecture & Tools",
-        icon: Layers01Icon,
-        skills: ["Clean Architecture", "Modular Design", "Git", "Vite", "Turbopack"],
-        color: "text-orange-500",
-        bg: "bg-orange-500/10",
-        description: "Ensuring code maintainability and efficient workflows."
+        title: "Backend & Data",
+        icon: Database01Icon,
+        skills: [
+            "FastAPI",
+            "Node.js",
+            "Express.js",
+            "Prisma",
+            "PostgreSQL",
+            "MongoDB"
+        ],
+        color: "text-green-500",
+        bg: "bg-green-500/10",
+        description: "Designing APIs, services, and data architectures that scale."
     },
     {
-        title: "AI & Modern Tech",
+        title: "AI & Automation",
         icon: AiScanIcon,
-        skills: ["Gemini AI", "Vercel AI SDK", "Prompt Engineering", "PDF Processing"],
+        skills: [
+            "LLM Integrations",
+            "AI Agents",
+            "LangChain",
+            "Vercel AI SDK",
+            "n8n",
+            "Prompt Engineering"
+        ],
         color: "text-cyan-500",
         bg: "bg-cyan-500/10",
-        description: "Integrating intelligent features and modern paradigms."
+        description: "Creating intelligent systems that automate workflows and drive efficiency."
     },
     {
-        title: "Deployment & Cloud",
+        title: "SaaS Architecture",
+        icon: Layers01Icon,
+        skills: [
+            "Multi-Tenant Systems",
+            "Authentication",
+            "Role-Based Access",
+            "API Design",
+            "Clean Architecture",
+            "Modular Systems"
+        ],
+        color: "text-orange-500",
+        bg: "bg-orange-500/10",
+        description: "Engineering maintainable platforms built for long-term growth."
+    },
+    {
+        title: "Infrastructure & Deployment",
         icon: CloudIcon,
-        skills: ["Vercel", "Neon Serverless", "VPS", "Coolify", "Edge Functions"],
+        skills: [
+            "Docker",
+            "AWS",
+            "VPS",
+            "Coolify",
+            "Dokploy",
+            "Vercel"
+        ],
         color: "text-pink-500",
         bg: "bg-pink-500/10",
-        description: "Automating deployments and managing cloud infrastructure."
+        description: "Deploying and managing production-ready applications with confidence."
     }
 ];
