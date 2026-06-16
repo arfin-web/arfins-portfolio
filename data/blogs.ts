@@ -23,7 +23,7 @@ export const blogs = [
         title: "Research Before Building a SaaS Application",
         excerpt: `Before building a SaaS application, it is important to 
         research the market and the competition. This will help you to 
-        build a better application that is scalable, maintainable, and 
+        build a better solution that is scalable, maintainable, and 
         secure.`,
         date: "Feb 07, 2026",
         readTime: "10 min read",
